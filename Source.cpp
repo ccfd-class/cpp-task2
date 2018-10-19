@@ -16,7 +16,7 @@ int main()
 
 	cout << "test:" << myDict.FindPassword(13625924) << endl; // answer: rano
 	string password = myDict.FindPassword(luckyHash);
-	cout << "password id:" << password << endl;
+	cout << "password is:" << password << endl;
 
 	double duration = (std::clock() - start) / (double)CLOCKS_PER_SEC;
 	cout << " \n duration: " << duration << " [s] = " << duration / 60 << " min" << endl;
