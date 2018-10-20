@@ -1,12 +1,11 @@
 #include "MyDict.h"
 
-inline long MyDict::GetHash(string s) const
+inline long MyDict::GetHash(const string &s) const
 {
 	long h = 7;
-	string someCharacters = "acegilmnoprstuwxyz";
+	const string someCharacters = "acegilmnoprstuwxyz";
 
-	for (char i : s)
-	{
+	for (char i : s){
 		h = h * 37 + someCharacters.find(i);
 	}
 	//int charIndex = someCharacters.find("c");

@@ -4,7 +4,7 @@
 Celem ćwiczenia jest odkodowanie 8 literowego słowa, z ciągu znaków: 'acegilmnoprstuwxyz', gdzie wynik funkcji GetHash() jest równy '25157672851591', a funkcja zdefiniowana jest następująco:
 
 ``` c++
-long GetHash(string s))
+long GetHash(const string &s))
 {
 	long h = 7;
 	string someCharacters = "acegilmnoprstuwxyz";
@@ -24,7 +24,7 @@ Zaimplentuj potrzebne metody w klasie MyDict:
 ```c++
 class MyDict
 {
-	long GetHash(string s) const;
+	long GetHash(const string &s) const;
 	// You may try plain c or list<string> or vector<string> or whatever you like to store the words. Consider benchmarking the differences between collections.
 public:
 	MyDict() = default;
