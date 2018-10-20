@@ -4,7 +4,7 @@
 Celem ćwiczenia jest odkodowanie 8 literowego słowa, z ciągu znaków: 'acegilmnoprstuwxyz', gdzie wynik funkcji GetHash() jest równy '25157672851591', a funkcja zdefiniowana jest następująco:
 
 ``` c++
-long GetHash(const string &s))
+long GetHash(const string &s)
 {
 	long h = 7;
 	string someCharacters = "acegilmnoprstuwxyz";
